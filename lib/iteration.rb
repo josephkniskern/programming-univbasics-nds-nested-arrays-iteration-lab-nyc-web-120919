@@ -22,7 +22,18 @@ def find_greater_pair(src)
     ele_index = 0
     inner_pairs = []
     while ele_index < src[row_index].count do
-      if 
+      if row_index[ele_index][0] > row_index[ele_index][1]
+        inner_pairs << row_index[ele_index][0]
+      else
+        inner_pairs << row_index[ele_index][1]
+      end
+      ele_index += 1
+    end
+    greater_pairs << inner_pairs
+    row_index += 1
+  end
+  
+  return greater_pairs
   
   
   

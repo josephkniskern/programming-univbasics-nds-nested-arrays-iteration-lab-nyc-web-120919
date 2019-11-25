@@ -25,6 +25,11 @@ def find_greater_pair(src)
       greater_pair << sub_arr[0]
     else
       greater_pair << sub_arr[1]
+    end 
+    i += 1 
+  end 
+  
+  return greater_pair
   
   greater_pair = []    
   src.each do |sub_arr|

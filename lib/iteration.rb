@@ -63,8 +63,12 @@ end
 def total_even_pairs(src)
   sum = 0
   src.each do |sub_arr|
-    if sub_arr[0] == sub_arr[1]
-      sum += 
+    if sub_arr[0] && sub_arr[1] % 2 == 0
+      sum += (sub_arr[0] + sub_arr[1])
+    end
+  end
+  
+  return sum
   
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the

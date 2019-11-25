@@ -25,7 +25,14 @@ def find_greater_pair(src)
       if arrays_ele[0] > arrays_ele[1]
         inner_pairs << arrays_ele[0]
       else
-        inner_pairs << arrays_ele[1]
+        inner_pairs << arrays_ele[1] 
+      end
+      arrays_ele += 1 
+    end 
+    greater_pairs << inner_pairs
+    arrays_ele += 1 
+  end 
+  
   return greater_pairs
   
   

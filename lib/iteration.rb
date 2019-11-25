@@ -22,10 +22,10 @@ def find_greater_pair(src)
     inner_pairs = []
     ele = 0
     while ele < src[row].length
-      if src[row][ele] > src[row][ele + 1]
-        inner_pairs << src[row][ele]
+      if src[row][ele][0] > src[row][ele][1]
+        inner_pairs << src[row][ele][0]
       else
-        inner_pairs << src[row][ele + 1]
+        inner_pairs << src[row][ele][1]
       end
       ele += 1
     end

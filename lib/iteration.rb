@@ -16,13 +16,29 @@ def join_ingredients(src)
 end
 
 def find_greater_pair(src)
-  greater_pairs = []
+  greater_pair = []
+  
   i = 0 
   while i < src.length 
-  i += 0 
+    sub_arr = src[i]
+    greater_num = []
+    j = 0
+    while j < sub_arr.length
+      ele1 = sub_arr[j]
+      ele2 = sub_arr[j + 1]
+      if ele1 > ele2
+        greater_num << ele1
+      else
+        greater_num << ele2
+      end
+      j += 1 
+    end 
+    greater_pair << greater_num
+    i += 1 
   end 
-  return greater_pairs
   
+  return greater_pair
+        
   
   
   

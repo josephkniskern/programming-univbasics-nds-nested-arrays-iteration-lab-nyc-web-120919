@@ -53,6 +53,20 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
+  sum = 0 
+  
+  i = 0 
+  while i < src.length 
+    sub_arr = src[i]
+    if sub_arr[0] && sub_arr[1] % 2 == 0 
+      sum += (sub_arr[0] + sub_arr[1])
+    end
+    
+    i += 1 
+  end 
+  
+  return sum 
+  
   sum = 0
   src.each do |sub_arr|
     if sub_arr[0] && sub_arr[1] % 2 == 0

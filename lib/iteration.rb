@@ -17,22 +17,10 @@ end
 
 def find_greater_pair(src)
   greater_pairs = []
-  src_arrays = 0 
-  while src_arrays < src.length 
-    inner_pairs = []
-    arrays_ele = 0 
-    while arrays_ele < src_arrays.length
-      if arrays_ele[0] > arrays_ele[1]
-        inner_pairs << arrays_ele[0]
-      else
-        inner_pairs << arrays_ele[1] 
-      end
-      arrays_ele += 1 
-    end 
-    greater_pairs << inner_pairs
-    arrays_ele += 1 
+  i = 0 
+  while i < src.length 
+  i += 0 
   end 
-  
   return greater_pairs
   
   

@@ -31,16 +31,16 @@ def find_greater_pair(src)
   
   return greater_pair
   
-  greater_pair = []    
-  src.each do |sub_arr|
-    if sub_arr[0] > sub_arr[1]
-      greater_pair << sub_arr[0]
-    else
-      greater_pair << sub_arr[1]
-    end
-  end
+  #greater_pair = []    
+  #src.each do |sub_arr|
+    #if sub_arr[0] > sub_arr[1]
+      #greater_pair << sub_arr[0]
+    #else
+      #greater_pair << sub_arr[1]
+    #end
+  #end
   
-  return greater_pair
+  #return greater_pair
   
   
   

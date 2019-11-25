@@ -33,7 +33,7 @@ def find_greater_pair(src)
     row += 1
   end
   
-  return greater_pairs
+  
   
   return greater_pairs
   

@@ -44,7 +44,11 @@ def find_greater_pair(src)
     if sub_arr[0] > sub_arr[1]
       greater_pair << sub_arr[1]
     else
-      greater_pair << sub_arr[0]
+      greater_pair << sub_arr[0
+    end
+  end
+  
+  return greater_pair
   
   
   
